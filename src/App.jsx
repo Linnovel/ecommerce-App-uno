@@ -1,7 +1,15 @@
+import Navbar from "./Navigation/Navbar";
+import Products from "./Products/Products";
+import Recommended from "./Recommended/Recommended";
+import Sidebard from "./SideBar/Sidebard";
+
 function App() {
   return (
     <>
-      <h1>akwdaopwd</h1>
+      <Sidebard />
+      <Navbar />
+      <Recommended />
+      <Products />
     </>
   );
 }
