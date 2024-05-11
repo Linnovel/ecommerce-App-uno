@@ -4,7 +4,7 @@ import Category from "./Category";
 import { TiShoppingCart } from "react-icons/ti";
 import "./Sidebard.css";
 
-const Sidebard = () => {
+const Sidebard = ({ handleChange }) => {
   return (
     <>
       <section className="sidebar">
@@ -13,9 +13,9 @@ const Sidebard = () => {
             <TiShoppingCart />
           </h1>
         </div>
-        <Category />
-        <Price />
-        <Colors />
+        <Category handleChange={handleChange} />
+        <Price handleChange={handleChange} />
+        <Colors handleChange={handleChange} />
       </section>
     </>
   );
